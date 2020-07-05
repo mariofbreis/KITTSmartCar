@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Interface Pessoa Máquina - Grupo 59 | Instituto Superior T&eacute;cnico</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script type="text/javascript">
+	var obj = 0;
+	function size() {
+	document.getElementById('picinicio').style.border = "none";
+	document.getElementById('pichelp').style.border = "none";
+	
+	if (obj == 1) {
+		document.getElementById('pichelp').style.border = "2px dashed red";
+
+		
+	} else if (obj == 2) {
+		document.getElementById('picinicio').style.border = "2px dashed red";
+		
+	} 
+}
+    document.onkeydown = function (event) {
+        if (event.which == 37) {    //LEFT
+			obj --;
+			if (obj == 3) {
+				obj = 0;
+			} else if (obj == -1) {
+				obj = 2;
+			}
+			size();
+        }
+        else if (event.which == 39) {   //RIGHT
+			obj ++;
+			if (obj == 3) {
+				obj = 0;
+			} else if (obj == -1) {
+				obj = 2;
+			}
+			size();
+        }
+        else if (event.which == 38) {   //UP
+        }
+		else if (event.which == 40) {   //DOWN
+        }
+        else if (event.which == 13) {    //ENTER
+			if (obj == 1) {
+				window.location = 'help.html';
+			} else if (obj == 2) {
+				//document.getElementById(appv).style.visibility= "hidden"
+				window.location = 'inicio.html';
+				
+			} 
+        }
+    }
+
+//window.location = 'theend.html';
+</script> 
+</head>
+
+<body>
+<div id="header">
+<h1 id="title">Adeus utilizador!</h1>
+</div>
+
+<footer>
+
+  <div id="menubar">
+		
+				<div id="help">
+			
+					<img id="pichelp" src="images/helpquestionmark.png"/>
+			
+				</div>
+			
+				<div id="inicio">
+			
+					<img id="picinicio" src="images/seta-right.png"/>
+			
+				</div>
+		
+		</div>
+	
+
+  
+
+</footer>
+
+</body>
+</html>

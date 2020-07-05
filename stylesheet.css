@@ -1,0 +1,449 @@
+html {
+	background-image:url('images/estrada.jpg');
+	background-repeat:no-repeat;
+	background-position:center top;
+
+}
+
+footer {
+	clear: both;
+    position: relative;
+    height: 3em;
+    margin-top: 15em;
+    text-align: right;
+
+}
+
+mid {
+	clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: 15em;
+    text-align: mid;
+	font-size: 30px;
+	font-family: sans-serif;
+	color: grey;
+}
+
+#title {
+	position: relative; 
+	top: 200px;
+	text-align:center;
+	font-family: sans-serif;
+}
+
+
+#pic {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	border: 2px solid white;
+
+}
+
+#picload {
+	text-align: center;
+	margin-left: 200px;
+}
+
+#picc {
+	height: 200px;
+	width: 200px;
+	margin: 5% 5% 5% 5%;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+#pict {
+	padding:5px 5px 5px 5px;
+	height: 200px;
+	width: 200px;
+	margin: 5% 5% 5% 5%;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+#pica {
+	height: 200px;
+	width: 200px;
+	margin: 5% 5% 5% 5%;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+
+#appcoracao{
+	position: relative;
+	margin: auto;
+	text-align: center;
+	height: 250px;
+	width: 250px;
+}
+
+
+#apptransito{
+	float:left;
+	margin-left: 40px;
+	width: 250px;
+	height: 250px;
+
+}
+
+#appaderencia{
+	float: right;
+	margin-right: 40px;
+	width: 250px;
+	height: 250px;
+}
+
+#appac {
+	
+	margin-left: 80px;
+	margin-top: 350px;
+}
+
+#appautomatico {
+	
+	margin-left: 200px;
+	margin-top: -50px;
+}
+
+#appluz {
+	
+	margin-left: 320px;
+	margin-top: -50px;
+}
+
+#appportas {
+	
+	margin-left: 440px;
+	margin-top: -50px;
+}
+
+#appvidros {
+	
+	margin-left: 560px;
+	margin-top: -50px;
+}
+
+#appradio {
+	
+	margin-left: 680px;
+	margin-top: -50px;
+}
+
+
+
+.appselect {
+	text-align: center;
+	position: relative;
+	
+	
+}
+
+.progalc {
+	height: 20px;  /* Can be anything */
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+	box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+  }
+  
+#batimentos {
+	position: absolute; 
+	top: 780px; 
+	left: 140px; 
+	width: 100%;
+}
+
+#alcoollim {
+	color: gray;
+	position: absolute; 
+	top: 720px; 
+	left: 2px; 
+	width: 100%;
+}
+
+#alcoolmid {
+	color: gray;
+	position: absolute; 
+	top: 810px; 
+	left: 2px; 
+	width: 100%;
+}
+
+#progress-outer {
+    position: absolute;
+    top: 750px; 
+	left: 25px;
+    background-image:url('images/cerveja.jpg');
+    -webkit-border-radius: 13px;
+    height: 200px;
+    width: 30px;
+    padding: 0px;
+}
+
+#progress-inner {
+    
+    background: #333;
+    width: 100%;
+    height: 50%;
+    -webkit-border-radius: 0px;
+}
+
+
+#notificacaon {
+	
+	color: gray;
+	text-align: left;
+	
+	margin-top: -800px;
+ 
+
+}
+
+
+
+#notificacaot {
+	
+	color: gray;
+	text-align: left;
+	margin-top: -700px;
+
+}
+
+
+
+#notificacaop {
+	color: gray;
+
+	text-align: left;
+	margin-top: -600px;
+
+}
+
+#aderencia {
+	position: relative;
+	height: 400px;
+	width 400px;
+	margin-left:200px;
+}
+
+
+
+#picappad {
+	
+	position: absolute;
+	
+	width: 300px;
+	
+	height: 300px;
+	
+
+}
+
+
+
+#picappt {
+	
+	position: absolute;
+	
+	height: 250px;
+	
+	width: 250px;
+
+	
+	-webkit-transform: rotateX(180deg);
+
+
+}
+
+
+
+#picappv {
+	
+	position: absolute;
+	
+	height: 250px;
+	
+	width: 250px;
+	
+
+}
+
+
+
+#appv{
+	
+	display: inline-block;
+	
+	margin-top: 700px;
+	
+	margin-left: 50px;
+
+}
+
+
+
+#appad{
+	
+	display: inline-block;
+	
+	margin-left: 900px;
+
+	margin-top: 600px;
+	margin-bottom: 100px;
+	}
+
+
+#appt{
+	
+	display: inline-block;
+	
+	margin-left: 500px;
+
+	margin-top: 700px;
+}
+
+
+#menubar{
+	
+	display: inline-block;
+
+	
+}
+
+#sair{
+	
+	margin-right: 10px;
+
+
+}
+
+
+#help{
+	
+	margin-right: 100px;
+
+
+	margin-top: -55px;
+}
+
+
+#menu {
+	
+	margin-right: 200px;
+
+	margin-top: -55px;
+	
+}
+
+#picinicio {
+
+	border-radius: 50%;
+	margin-right: 10px;
+
+	margin-top: -55px;
+	
+}
+
+#picac {
+
+	border-radius: 50%;	
+	width: 50px;
+
+	height: 50px;
+
+}
+
+#picauto {
+
+	border-radius: 50%;
+	width: 50px;
+
+	height: 50px;
+
+}
+
+#picluz {
+
+	border-radius: 50%;
+	width: 50px;
+
+	height: 50px;
+
+}
+
+#picportas {
+
+	border-radius: 50%;
+	width: 50px;
+
+	height: 50px;
+
+}
+
+#picvidros {
+
+	border-radius: 50%;
+	width: 50px;
+
+	height: 50px;
+
+}
+
+#picradio {
+
+	border-radius: 50%;
+	width: 50px;
+
+	height: 50px;
+
+}
+
+#picsair {
+
+	border-radius: 50%;
+	width: 50px;
+
+	height: 50px;
+
+}
+
+
+#pichelp {
+	border-radius: 50%;
+
+	width: 60px;
+
+	height: 60px;
+
+}
+
+
+#picmenu {
+	border-radius: 50%;
+
+	width: 50px;
+
+	height: 50px;
+
+}
+
+
+#helpmenu {
+	position: absolute;
+	margin-left:200px;
+}
+
+#otherfunc{
+	margin-top: -300px;
+	margin-left: 250px;
+	display: inline-block;
+}

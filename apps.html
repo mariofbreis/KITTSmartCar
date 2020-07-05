@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Interface Pessoa Máquina - Grupo 59 | Instituto Superior T&eacute;cnico</title>
+<script rel="text/javascript" src="jquery.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script type="text/javascript">
+	var obj = 0;
+	function size() {
+	document.getElementById('picc').style.border = "none";
+	document.getElementById('pict').style.border = "none";
+	document.getElementById('pica').style.border = "none";
+	document.getElementById('help').style.marginTop= "-100px";
+	document.getElementById('sair').style.marginTop= "-100px";
+	document.getElementById('pichelp').style.border = "none";
+	document.getElementById('picsair').style.border = "none";
+	document.getElementById('picac').style.border = "none";
+	document.getElementById('picauto').style.border = "none";
+	document.getElementById('picluz').style.border = "none";
+	document.getElementById('picportas').style.border = "none";
+	document.getElementById('picvidros').style.border = "none";
+	document.getElementById('picradio').style.border = "none";
+	document.getElementById('help').style.marginTop = "-55px";
+	
+
+
+	if (obj == 1) {
+	    document.getElementById('picc').style.border = "2px dashed red";
+
+	} else if (obj == 0) {
+	    document.getElementById('pict').style.border = "2px dashed red";
+
+	} else if (obj == 2) {
+	    document.getElementById('pica').style.border = "2px dashed red";
+
+	} else if (obj == 3) {
+	   document.getElementById('picac').style.border = "2px dashed red";
+
+	} else if (obj == 4) {
+	     document.getElementById('picauto').style.border = "2px dashed red";
+
+	} else if (obj == 5) {
+	    document.getElementById('picluz').style.border = "2px dashed red";
+
+	} else if (obj == 6) {
+	   document.getElementById('picportas').style.border = "2px dashed red";
+
+	} else if (obj == 7) {
+	    document.getElementById('picvidros').style.border = "2px dashed red";
+
+	} else if (obj == 8) {
+	    document.getElementById('picradio').style.border = "2px dashed red";
+
+	} else if (obj == 9) {
+	 	document.getElementById('pichelp').style.border = "2px dashed red";
+	    
+
+	} else if (obj == 10) {
+		document.getElementById('picsair').style.border = "2px dashed red";
+	    
+	}
+}
+
+document.onkeydown = function (event) {
+    if (event.which == 37) {    //LEFT
+        obj--;
+        if (obj == 11) {
+            obj = 0;
+        } else if (obj == -1) {
+            obj = 10;
+        }
+        size();
+    }
+    else if (event.which == 39) {   //RIGHT
+        obj++;
+        if (obj == 11) {
+            obj = 0;
+        } else if (obj == -1) {
+            obj = 10;
+        }
+        size();
+    }
+    else if (event.which == 38) {   //UP
+    }
+    else if (event.which == 40) {   //DOWN
+    }
+    else if (event.which == 13) {    //ENTER
+        if (obj == 0) {
+            window.location = 'lercardiaco.html';
+        } else if (obj == 1) {
+            //document.getElementById(appv).style.visibility= "hidden"
+            window.location = 'appt.html';
+
+        } else if (obj == 2) {
+            window.location = 'appad.html';
+        } else if (obj == 3) {
+            window.location = 'notimplemented.html';
+        } else if (obj == 4) {
+            window.location = 'notimplemented.html';
+        } else if (obj == 5) {
+            window.location = 'notimplemented.html';
+        } else if (obj == 6) {
+            window.location = 'notimplemented.html';
+        } else if (obj == 7) {
+            window.location = 'notimplemented.html';
+        } else if (obj == 8) {
+            window.location = 'notimplemented.html';
+        } else if (obj == 9) {
+            window.location = 'help.html';
+        } else if (obj == 10) {
+            window.location = 'theend.html';
+        } 
+    }
+}
+
+//window.location = 'theend.html';
+</script>
+</head>
+
+<body onload="size()">
+	 
+	 
+	 <div id="appcoracao">
+	 	<div class="appselect">
+		 <img id="picc" src="images/seta.png">
+		 </div>
+	 </div>
+	 <div id="apptransito">
+	 	<div class="appselect">
+		 <img id="pict" src="images/coracao.gif">
+		 </div>
+	 </div>
+	 </a>
+	 <div id="appaderencia">
+	 	<div class="appselect">
+		 <img id="pica" src="images/pneu.png">
+		 </div>
+	 </div>
+
+<div id="otherfunc">   
+     
+	<div id="appac">
+    		
+		<img id="picac" src="images/ac.png"/>
+
+	</div>
+    <div id="appautomatico">
+     
+  <img id="picauto" src="images/automatico.png"/>
+
+    </div>
+     <div id="appluz">
+    		
+     	<img id="picluz" src="images/luz.png"/>
+     
+     </div>
+     <div id="appportas">
+    		
+     	<img id="picportas" src="images/portas.png"/>
+     
+     </div>
+     <div id="appvidros">
+    		
+     	<img id="picvidros" src="images/vidros.png"/>
+     
+     </div>
+     <div id="appradio">
+    		
+     	<img id="picradio" src="images/radio.png"/>
+     
+     </div>
+
+
+</div>
+
+
+<footer>
+		
+		<div id="menubar">
+				<div id="sair">
+			
+					<img id="picsair" src="images/fechar.png"/>
+
+				</div>
+			
+				<div id="help">
+			
+					<img id="pichelp" src="images/helpquestionmark.png"/>
+			
+				</div>
+				
+		</div>
+	
+	</footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Interface Pessoa MÃ¡quina - Grupo 59 | Instituto Superior T&eacute;cnico</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script type="text/javascript">
+	var obj = 0;
+	function size() {
+	document.getElementById('picmenu').style.border = "none";
+	document.getElementById('pichelp').style.border = "none";
+	document.getElementById('picsair').style.border = "none";
+	document.getElementById('menubar').style.marginTop = "800px";
+	
+	if (obj == 1) {
+		document.getElementById('picmenu').style.border = "2px dashed red";
+
+		
+	} else if (obj == 2) {
+		document.getElementById('pichelp').style.border = "2px dashed red";
+		
+	} else if (obj == 3) {
+		document.getElementById('picsair').style.border = "2px dashed red";
+		
+	}
+}
+    document.onkeydown = function (event) {
+        if (event.which == 37) {    //LEFT
+			obj --;
+			if (obj == 4) {
+				obj = 0;
+			} else if (obj == -1) {
+				obj = 3;
+			}
+			size();
+        }
+        else if (event.which == 39) {   //RIGHT
+			obj ++;
+			if (obj == 4) {
+				obj = 0;
+			} else if (obj == -1) {
+				obj = 3;
+			}
+			size();
+        }
+        else if (event.which == 38) {   //UP
+        }
+		else if (event.which == 40) {   //DOWN
+        }
+        else if (event.which == 13) {    //ENTER
+			if (obj == 1) {
+				window.location = 'apps.html';
+			} else if (obj == 2) {
+				//document.getElementById(appv).style.visibility= "hidden"
+				window.location = 'help.html';
+				
+			} else if (obj == 3) {
+				window.location = 'theend.html';
+			}
+        }
+    }
+
+//window.location = 'theend.html';
+</script>
+</head>
+
+<body onload = size()>
+<div id="header">
+<h1 id="title">Funcionalidade não implementada!</h1>
+</div>
+
+
+<footer>
+		
+		<div id="menubar">
+
+				<div id="sair">
+			
+					<img id="picsair" src="images/fechar.png"/>
+
+				</div>
+			
+				<div id="help">
+			
+					<img id="pichelp" src="images/helpquestionmark.png"/>
+			
+				</div>
+			
+				<div id="menu">
+			
+					<img id="picmenu" src="images/menu_icon.png"/>
+			
+				</div>
+		
+		</div>
+	
+	</footer>
+
+</body>
+</html>
